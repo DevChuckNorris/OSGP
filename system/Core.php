@@ -38,7 +38,7 @@ class Core {
     }
 
     public function run() {
-        $this->smarty->display("home.tpl");
+        $this->smarty->display("login.tpl");
     }
 
     public function isDebug() {

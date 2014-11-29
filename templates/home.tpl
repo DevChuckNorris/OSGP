@@ -31,17 +31,6 @@
                 <li class="{if $URL eq 'Servers'}active{/if}"><a href="{$PATH}Servers/">Servers</a></li>
                 <li class="{if $URL eq 'Settings'}active{/if}"><a href="{$PATH}Settings/">Settings</a></li>
             </ul>
-
-            <form class="navbar-form navbar-right" role="form" method="post">
-                <div class="form-group">
-                    <input type="text" name="username" placeholder="Username" class="form-control">
-                </div>
-                <div class="form-group">
-                    <input type="password" name="pwd" placeholder="Password" class="form-control">
-                </div>
-                <input type="hidden" name="action" value="login" />
-                <button type="submit" class="btn btn-success">Sign in</button>
-            </form>
         </div>
     </div>
 </nav>
