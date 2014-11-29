@@ -37,6 +37,10 @@ class Core {
         Core::$instance = $this;
     }
 
+    public function run() {
+        $this->smarty->display("home.tpl");
+    }
+
     public function isDebug() {
         return true;
     }
@@ -103,6 +107,9 @@ class Core {
         $this->smarty->setCompileDir(ROOT_DIR . "templates" . DS . "compiled" . DS);
         $this->smarty->debugging = $this->isDebug();
         $this->smarty->caching = false;
+
+        $this->smarty->assign('PATH', '/OSGP/');
+        $this->smarty->assign('URL', $_GET['page']);
     }
 
     /**
