@@ -1,0 +1,7 @@
+# Idea Project Files
+.idea/
+*.iml
+
+# PHP generated stuff
+exceptions/
+log/
